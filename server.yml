@@ -25,7 +25,7 @@ Resources:
     Type: AWS::IAM::InstanceProfile
     Properties: 
       Roles:
-        - UdacityS3ReadOnlyEC2
+        - Ref: UdacityS3ReadOnlyEC2
 
   LBSecGroup:
     Type: AWS::EC2::SecurityGroup
